@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Start of header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    color: hsl(0, 0%, 100%);
+    font-family: Barlow;
+    padding: 2em;
+}
+.header li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 3em; 
+    padding: 0.5em;
+    font-size: 11px;
+}
+.header a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.header a:hover{
+    color: hsl(51, 100%, 49%);
+    font-weight: 900;
+
+}
+.contact a{
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+    font-family: Fraunces;
+    padding: 0.9em 1.5em;
+    border-radius: 16px;
+}   /*End of header*/
+
+/* Designs on the first view port - BACKGROUND IMAGE, TEXT AND ICON */
+.firstview{
+    min-height: 100vh;
+    background-image: url(./images/desktop/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.firstview_text{
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 0.5em;
+    font-family: Fraunces;
+    width: 500px;
+    margin: 6em auto;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 7em;
+}
+
+/* Second viewport height */
+.all_box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+  /* This is a property for all the boxes - height of 500px */
+.prop{
+    height: 500px;
+}
+
+  /* box one */
+.box_one{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  /* This is for the div that contains texts in box 1 & 4 */
+.box_text{
+    width: 400px;
+    font-family: Fraunces;
+}
+.box_text h3{
+    width: 200px;
+    margin: 1.5em 0em;
+    font-weight: 900;
+}
+
+.box_text h5{
+    width: 100px;
+}
+
+.y_border{
+    margin-top: 2em;
+    border-bottom: 4px solid hsl(51, 100%, 49%);
+}
+.p_border{
+    margin-top: 2em;
+    border-bottom: 4px solid hsl(7, 99%, 70%);
+}
+
+.box_text p{
+    font-family: Barlow;
+    color: hsl(213, 9%, 39%);
+    font-size: 12px;
+    line-height: 1.8em;
+    font-weight: 600;
+}
+.box_text h3, h5{
+    color: hsl(212, 27%, 19%);
+}
+
+  /* Second box */
+.box_two{
+    background-image: url(./images/desktop/image-transform.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+  /* Third box */
+.box_three{
+    background-image: url(./images/desktop/image-stand-out.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+  /* Fourth box */
+.box_four{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  /* Fifth box */
+.box_five{
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: hsl(167, 40%, 24%);
+}
+  /* Sixth box */
+.box_six{
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: hsl(198, 62%, 26%);
+}
+  /* This div contains texts in the image */
+.box_imgtext{
+    margin-top: 20em;
+    text-align: center;
+    width: 400px;
+}
+.box_imgtext h3{
+    font-family: Fraunces;
+    font-weight: 900;
+    padding-bottom: 1.5em;
+}
+.box_imgtext p{
+    font-family: Barlow;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.8em;
+}
+
+/* Styles for testimonials */
+.testimonial{
+    text-align: center;
+    padding-top: 6em;
+}
+.testimonial h4{
+    font-family: Fraunces;
+    color: hsl(210, 4%, 67%);
+    letter-spacing: 0.2em;
+}
+
+/* This is a container for the boxes */
+.client_box{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3em 2em 5em;
+}
+
+.c_width{
+    width: 250px;
+    font-family: Barlow;
+}
+/* .client_one{
+    
+} */
+.client_oneimage{
+    background-image: url(./images/image-emily.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 2.5em;
+}
+/* .client_two{
+    
+} */
+.client_twoimage{
+    background-image: url(./images/image-thomas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 2.5em;
+}
+/* .client_three{
+} */
+.client_threeimage{
+    background-image: url(./images/image-jennie.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 2.5em;
+}
+.client_box h5{
+    margin-top: 3em;
+    font-family: Fraunces;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);  
+}
+.client_box h6{
+    color: hsl(210, 4%, 67%);
+}
+.client_box p{
+    color: hsl(213, 9%, 39%);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+/* This is to decrease the line height between h5 and h6 */
+.line{
+    line-height: 1.4em;
+}
+
+/* Last section */
+.last{
+    display: flex;
+    /* background-color: pink; */
+}
+
+.last_h{
+    height: 400px;
+    width: 400px;
+}
+.last_one{
+    background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.last_two{
+    background-image: url(./images/desktop/image-gallery-orange.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.last_three{
+    background-image: url(./images/desktop/image-gallery-cone.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.last_four{
+    background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Start of footer */
+.footer{
+    background-color: hsl(168, 44%, 68%);
+    color: hsl(167, 40%, 24%);
+    text-align: center; 
+    font-family: Barlow;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.f_logo{
+    padding-top: 2em;
+}
+.footer_nav{
+    margin: 3em 0 5em;
+}
+.footer_nav p{
+    display: inline-block;
+    margin: 0 2em 0;
+    /* background-color: pink; */
+}
+.f_icon{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4em;
+}
+.ic_margin{
+    margin-left: 1em;
+    /* background-color: pink; */
+}
+
+
+
+
+
+
+
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
