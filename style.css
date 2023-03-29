@@ -12,6 +12,7 @@
     font-family: Barlow;
     padding: 2em;
 }
+
 .header li{
     list-style: none;
     display: inline-block;
@@ -38,6 +39,9 @@
     border-radius: 16px;
 }   /*End of header*/
 
+.menu{
+    display: none;
+}
 /* Designs on the first view port - BACKGROUND IMAGE, TEXT AND ICON */
 .firstview{
     min-height: 100vh;
@@ -259,6 +263,7 @@
 /* Last section */
 .last{
     display: flex;
+    flex-wrap: wrap;
     /* background-color: pink; */
 }
 
@@ -327,6 +332,16 @@
 @media(width <= 600px){
     .links{
         display: none;
+    }
+
+    .menu{
+        display: flex;
+    }
+    .menu:hover{
+        display: block;
+        background: #fff;
+        width: 200px;
+        height: 200px;
     }
 
     .firstview_text{
@@ -463,14 +478,11 @@
         margin: 0 auto 2.5em;
     }
 
-    .last{
-        display: grid;
-        grid-template-columns: repeat(2, 0fr);
-    }
 
+    
     .last_h{
-        height: 150px;
-        width: 200px;
+        height: 200px;
+        width: 50%;
     }
 
     .box_imgtext p{
