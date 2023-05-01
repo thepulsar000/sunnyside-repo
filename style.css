@@ -81,12 +81,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 1s ease-in;
+}
+.box_one:hover{
+    background: hsl(0, 0%, 0%);
 }
   /* This is for the div that contains texts in box 1 & 4 */
 .box_text{
-    width: auto;
+    width: 70%;
     font-family: Fraunces;
-    text-align: left;
 }
 .box_text h3{
     /* width: 200px; */
@@ -111,6 +114,7 @@
     font-family: Barlow;
     color: hsl(213, 9%, 39%);
     font-size: 12px;
+    text-align: left;
     line-height: 1.8em;
     font-weight: 600;
 }
@@ -141,6 +145,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 1s ease-out;
+}
+.box_four:hover{
+    background: hsl(0, 0%, 0%);
 }
 
   /* Fifth box */
@@ -328,7 +336,7 @@
 }
 
 
-@media(width <= 600px){
+@media(max-width: 600px){
     .links{
         display: none;
     }
